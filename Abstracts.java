@@ -5,8 +5,22 @@ abstract class A{
 
 
 public class Abstracts extends A {
-    public static void main(String[] args){
 
-        
+    @Override
+    public void myMethod() {
+        System.out.println("My Method");
+    }
+
+    @Override
+    public void myMethod2() {
+        System.out.println("My Method2");
+    }
+    public static void main(String[] args){
+Abstracts a= new Abstracts();
+a.myMethod();
+a.myMethod2();
+A a1 = new Abstracts();
+a1.myMethod();
+a1.myMethod2();        
     }
 }
