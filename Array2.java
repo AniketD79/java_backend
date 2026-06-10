@@ -44,7 +44,7 @@ public class Array2 {
         for(int x=0; x<=j; x++){
             System.out.println(arr[x]);
         }
-
+// 
     }
 }
 
