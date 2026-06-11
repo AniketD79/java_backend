@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class Array3 {
 
     public static void main(String[] args) {
@@ -47,21 +49,33 @@ public class Array3 {
                 // 2 -> 2
                 // 3 -> 1
 
-        int arr[]={1,2,1,3,2,1};
-        int j= 0;
-        int count=0;
+        // int arr[]={1,2,1,3,2,1};
+        // int j= 0;
+        // int count=0;
 
-        for(int i=0; i<arr.length; i++){
+        // HashMap<Integer, Integer> map = new HashMap<>();
+        // for(int i=0; i<arr.length; i++){
 
-            if(arr[j]==arr[i]){
-                count++;
-            }
-            if(i==arr.length-1){
-                System.out.println(arr[j]+" -> "+count);
-                j++;
-            }
-        }
-        
+        //     if(map.containsKey(arr[i])){
+        //         map.put(arr[i], map.get(arr[i])+1);
+        //     }
+        //     else{
+        //         map.put(arr[i], 1);
+        //     } 
+        // } System.out.println(map);
 
+
+
+        // 5. Find Single Occurring Element
+        // Input:{1,2,1,3,2,1};
+        // Output:3
+        int arr[]={1,1,2,2,3,4,4};        
+int xor = 0;
+
+for(int num : arr){
+    xor ^= num;
+}
+
+System.out.println(xor);
     }
 }
